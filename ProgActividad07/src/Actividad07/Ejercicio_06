@@ -1,0 +1,39 @@
+//Ejercicio 6
+
+	for(int i = 1; i <= 6; i++) {
+		int variable = 1;
+		
+		if(i % 2 != 0 || variable != 3) {
+			System.out.println(i);
+		}
+		variable += 2;
+	}
+                               
+	Iteración 1:
+		
+		i = 1; variable = 1
+		salida = 1
+		
+	Iteración 2:
+		
+		i = 2; variable = 3
+
+	Iteración 3:
+		
+		i = 3; variable = 5
+		salida = 3
+
+	Iteración 4:
+		
+		i = 4; variable = 7
+		salida = 4
+	
+	Iteración 5:
+		
+		i = 5; variable = 9
+		salida = 4
+		
+	Iteración 6:
+		
+		i = 6; variable = 11
+		salida = 6

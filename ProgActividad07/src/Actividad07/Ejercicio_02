@@ -1,0 +1,20 @@
+//Ejercicio 2
+
+	for(int i = 1; i <= 6; i+=2) {
+
+		if(i % 2 == 0) {
+			System.out.println(i - 1);
+		}                                            
+	}
+         
+	Iteración 1:
+         
+		i = 1
+         
+	Iteración 2:
+	
+		i = 3
+
+	Iteración 3:
+	
+		i = 5

@@ -1,0 +1,22 @@
+//Ejercicio 4
+
+	for(int i = 1; i <= 6; i++) {
+		if(i % 2 == 0) {
+			System.out.println(i - 1);
+		}else {
+			i++;
+		}
+	}
+	
+	Iteración 1:
+		
+		i = 1
+		
+	Iteración 2:
+		
+		i = 3
+
+	Iteración 3:
+		
+		i = 5
+		

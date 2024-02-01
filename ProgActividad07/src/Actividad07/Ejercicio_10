@@ -1,0 +1,22 @@
+//Ejercicio 10
+
+	for(int i = 1; i <= 5; i++) {
+	
+   		System.out.println(i++);
+   	}
+
+                    
+	Iteración 1:
+		
+		i = 1
+		salida = 1
+		
+	Iteración 2:
+		
+		i = 3
+		salida = 3
+
+	Iteración 3:
+		
+		i = 5
+		salida = 5

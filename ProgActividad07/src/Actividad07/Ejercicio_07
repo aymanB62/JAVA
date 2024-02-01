@@ -1,0 +1,37 @@
+//Ejercicio 7
+
+	for(int i = 1; i <= 5; i++) {
+		if(i % 2 == 0) {
+			System.out.println(i - 1);
+		}             
+		if(i == 3) {
+		break;
+		}
+	}
+                               
+	Iteración 1:
+		
+		i = 1
+		
+	Iteración 2:
+		
+		i = 2
+		salida = 1
+
+	Iteración 3:
+		
+		i = 3
+
+	Iteración 4:
+		
+		i = 4
+		salida = 3
+	
+	Iteración 5:
+		
+		i = 5
+		
+	Iteración 6:
+		
+		i = 6
+		salida = 5

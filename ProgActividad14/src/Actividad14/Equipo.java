@@ -43,16 +43,66 @@ public class Equipo {
 	}
 		
 //	Los objetos tendrán la opción de devolver si existe un jugador pasado por parámetro.
+	
+	public boolean checkJugador(String nombre) {
+		this.nombre = nombre;
+		for(int i = 0; i < lista.length; i++) {
+			if(nombre.equals(lista[i])) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 //	Los objetos tendrán la opción de devolver el numero de jugadores que tienen.
+	
+	public int numeroJugadores() {
+		return this.lista.length;
+	}
+	
 //	Los objetos tendrán la opción de devolver si el número de jugadores que tienen es apto para jugar. 
-	//Un equipo es apto para jugar si tiene al menos 7 jugadores.
+//	Un equipo es apto para jugar si tiene al menos 7 jugadores.
+	
+	public boolean esApto() {
+		if(this.lista.length >=7) {
+			return true;
+		}
+		return false;
+	}
+	
 //	Los objetos tendrán la opción de devolver si una lista de jugadores pasada por parámetro es exactamente igual a su lista de jugadores
+	
+	public boolean listaEquals(String[] lista2) {
+		if (this.lista.length != lista2.length) {
+            return false;
+        }
+        for (int i = 0; i < this.lista.length; i++) {
+            if (!this.lista[i].equals(lista2[i])) {
+                return false;
+            }
+        }
+        return true; 
+	}
+	
 //	Los objetos tendrán la opción de devolver si un equipo pasado por parámetro es exactamente igual al mismo. 
-	//Un equipo es exactamente igual si tiene el mismo nombre y la misma lista de jugadores con los mismos nombres.
+//	Un equipo es exactamente igual si tiene el mismo nombre y la misma lista de jugadores con los mismos nombres.
+	
+	public boolean equipoEquals(Equipo equipo) {
+		if (this.lista.length != equipo.lista.length && !this.nombre.equalsIgnoreCase(equipo.nombre)) {
+            return false;
+        }
+        for (int i = 0; i < this.lista.length; i++) {
+            if (!this.lista[i].equals(equipo.lista[i])) {
+                return false;
+            }
+        }
+        return true; 
+	}
+	
 //	Parte de creación de objetos
-//
+	
 //	Habrá que crear otra clase que ejecute el programa principal y cree 2 equipos diferentes. Los valores de los equipos serán los que se metan por teclado. 
-	// equipos tendrán que ser introducidos en un array de equipos.
+//	equipos tendrán que ser introducidos en un array de equipos.
 //
 //	A continuación debemos de invocar todos sus métodos y observar los diferentes resultados. 
 	//Tendremos que invocar los métodos recorriendo el array de equipos con un bucle, no podemos invocar los métodos fuera de dicho bucle.

@@ -69,13 +69,11 @@ public class Usuario {
 	
 //	Los objetos tendrán la opción de decir cuantas valoraciones superan una valoración dada. 
 	
-	public void valoracionMayorMenor() {
+	public void valoracionMayorMenor(Usuario v) {
 		int sumador = 0;
 		for(int i = 0; i < this.valoraciones.length; i ++) {
-			double mayor = 0;
-			
-				if(this.valoraciones[i] > mayor) {
-					mayor = this.valoraciones[i];
+			v.valoraciones[1] = this.valoraciones[i];
+				if(this.valoraciones[i] > v.valoraciones[1]) {
 					sumador++;
 				}
 		}

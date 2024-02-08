@@ -16,7 +16,7 @@ public class Main {
 		
 		u1.imprimirValoraciones();
 		
-		u1.valoracionMayorMenor();
+		u1.valoracionMayorMenor(u1);
 		
 		
 	}

@@ -59,14 +59,14 @@ public class Coche {
 			
 	//Los objetos tendrán la opción de mostrar si el año de su matriculación fue año bisiesto (ver la formula por internet)
 	
-//	public void imprimirEsBisiesto() {
-//		String[] cadenaDividida = this.matriculacion.split("/");
-//		int anio = Integer.parseInt(cadenaDividida[2]);
-//		if ((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0)))
-//			System.out.println("El año es bisiesto");
-//		else
-//			System.out.println("El año no es bisiesto");
-//	}
+	public void imprimirEsBisiesto() {
+		String[] cadenaDividida = this.matriculacion.split("/");
+		int anio = Integer.parseInt(cadenaDividida[2]);
+		if ((anio % 4 == 0) && ((anio % 100 != 0) || (anio % 400 == 0)))
+			System.out.println("El año es bisiesto");
+		else
+			System.out.println("El año no es bisiesto");
+	}
 			
 	//Los objetos tendrán la opción de devolver su precio en función de los kilómetros.
 	

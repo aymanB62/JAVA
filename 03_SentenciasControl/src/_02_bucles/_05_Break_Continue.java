@@ -28,7 +28,7 @@ public class _05_Break_Continue {
 		//OJO, rompe la ejecución del bucle donde se ejecuta, PERO si
 		//esta el bucle anidado, NO romple el bucle exterior
 		
-		System.out.println("-----------------------------------------");
+		System.out.println("---------------- BREAK -------------------------");
 		//Vamos a imprimir la tabla de multiplicar de los 5 primeros
 		//numeros pero solo los resultados del 1 al 5
 		for(int i = 1; i <= 10; i ++) {

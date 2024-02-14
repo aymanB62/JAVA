@@ -57,13 +57,7 @@ public class Equipo {
 //	Los objetos tendrán la opción de devolver el numero de jugadores que tienen.
 	
 	public int numeroJugadores() {
-		int contador = 0;
-		for(String j : this.nombre){
-			if(j != null){
-				contador++;
-			}
-		}
-		return contador;
+		return this.lista.length;
 	}
 	
 //	Los objetos tendrán la opción de devolver si el número de jugadores que tienen es apto para jugar. 

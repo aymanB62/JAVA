@@ -103,12 +103,11 @@ public class Empresa {
 		return total;
 	}
 	public boolean dniValido() {
-		boolean valido = false;
+		boolean valido = true;
 		for (Trabajador trabajador : listaTrabajadores) {
-			if(trabajador.dni.length() == 9) {
-				valido = true;
-			}else {
+			if(trabajador.dni.length() != 9) {
 				valido = false;
+				break;
 			}
     	}
 		return valido;

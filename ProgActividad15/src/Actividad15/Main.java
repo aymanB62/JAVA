@@ -4,8 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		Trabajador trabajador1_empresa1 = new Trabajador("Pedro", "02345678P" , 5000);
-		Trabajador trabajador2_empresa1 = new Trabajador("Mario", "02345678M" , 2001);
-		Trabajador trabajador3_empresa1 = new Trabajador("Daniel", "02345678D" , 1999);
+		Trabajador trabajador2_empresa1 = new Trabajador("Mario", "02345776M" , 2001);
+		Trabajador trabajador3_empresa1 = new Trabajador("Daniel", "02345677D" , 1999);
 		
 		Trabajador[] listaTrabajadores1 = new Trabajador[3];
 		
@@ -16,15 +16,15 @@ public class Main {
 		
 		Empresa empresa1 = new Empresa("OLE", "87654320P",  listaTrabajadores1);
 		
-		Trabajador trabajador1_empresa2 = new Trabajador("Pedro", "02345678P" , 5000);
+		Trabajador trabajador1_empresa2 = new Trabajador("Manuel", "02345678P" , 5000);
 		Trabajador trabajador2_empresa2 = new Trabajador("Mario", "02345678M" , 2001);
-		//Trabajador trabajador3_empresa2 = new Trabajador("Daniel", "02345678D" , 1999);
+		Trabajador trabajador3_empresa2 = new Trabajador("Daniel", "02345678D" , 1999);
 		
 		Trabajador[] listaTrabajadores2 = new Trabajador[3];
 		
 		listaTrabajadores2[0] = trabajador1_empresa2;
 		listaTrabajadores2[1] = trabajador2_empresa2;
-		//listaTrabajadores2[2] = trabajador3_empresa2;
+		listaTrabajadores2[2] = trabajador3_empresa2;
 
 		
 		Empresa empresa2 = new Empresa("MAOS", "87654320P",  listaTrabajadores2);
@@ -36,7 +36,7 @@ public class Main {
 		System.out.println(empresa1.trabajadoresSalarioMas3000());
 		System.out.println(empresa1.trabajadoresSalarioMasSMI());
 		System.out.println(empresa1.trabajadoresSalarioMasX(2000));
-		System.out.println(empresa1.dniValido());
+		System.out.println("¿El DNI es valido? " + empresa1.dniValido());
 		System.out.println(empresa1.empresasIguales(empresa2));
 	}
 

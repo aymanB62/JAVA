@@ -50,11 +50,29 @@ public class MainRelaciones {
 		Persona p2 = new Persona();
 		//p2.direccion = "Orense 05789 Plaza de España 78"; 
 		p2.nombre = "Ironman";
-		//p2 = p1;
+		//p2 = p1;v
 		d1 = new Direccion();
 		d1.ciudad = "New York";
 		p2.direccion = d1;
-		System.out.println(p2.direccion.ciudad);
+		//System.out.println(p2.direccion.ciudad.charAt(0));
 		//p1 = null;
+		p2.direccion.ciudad = "Oklahoma";
+		System.out.println(d1.ciudad);
+		
+		CuentaBancaria cb2 = new CuentaBancaria();
+		cb2.iban = "PT56";
+		p2.cuentasBancarias = new CuentaBancaria[2];
+		p2.cuentasBancarias[0] = cb2;
+		
+		cb2 = new CuentaBancaria();
+		
+		p2.cuentasBancarias[1] = cb2;
+		cb2.iban = "IT89";
+		System.out.println(p2.cuentasBancarias[1].iban);
+		System.out.println(p2.cuentasBancarias[1]);
+		
+		System.out.println(p1);
+		System.out.println(p2);
+		
 	}
 }

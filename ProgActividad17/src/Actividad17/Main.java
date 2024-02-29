@@ -53,7 +53,7 @@ public class Main {
 		teclado.setPrecio(1);
 		teclado.setTipo("LSD");
 		
-		listaPerifericos.add(teclado); listaPerifericos.add(raton); listaPerifericos.add(monitor);
+		listaPerifericos.add(teclado); listaPerifericos.add(raton);listaPerifericos.add(raton);
 		
 		
 		ordenador.listaPerifericos = listaPerifericos;

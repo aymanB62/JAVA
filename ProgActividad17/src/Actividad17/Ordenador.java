@@ -15,13 +15,13 @@ public class Ordenador {
 		double precioRAMs = 0;
 		double precioPerifericos = 0;
 		for(Periferico x : listaPerifericos) {
-			precioPerifericos += x.precio;
+			precioPerifericos += x.getPrecio();
 		}
 		for(RAM x : listaRAMs) {
 			precioRAMs += x.precio;
 		}
 
-		this.precio = procesador.precio + tarjetaGrafica.precio + placaBase.precio + precioRAMs + precioPerifericos ;
+		this.precio = procesador.precio + tarjetaGrafica.precio + placaBase.getPrecio() + precioRAMs + precioPerifericos ;
 	}
 
 	@Override

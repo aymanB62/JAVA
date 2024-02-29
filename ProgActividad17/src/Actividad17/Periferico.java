@@ -5,9 +5,9 @@ public class Periferico {
 		String tipo
 		String marca
 		doublé precio*/
-	String tipo;
-	String marca;
-	double precio;
+	private String tipo;
+	private String marca;
+	private double precio;
 	public String getTipo() {
 		return tipo;
 	}

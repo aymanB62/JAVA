@@ -7,9 +7,9 @@ public class PlacaBase {
 		doublé precio 
 		String tipo*/
 
-		String marca;
-		double precio; 
-		String tipo;
+		private String marca;
+		private double precio; 
+		private String tipo;
 		public String getMarca() {
 			return marca;
 		}

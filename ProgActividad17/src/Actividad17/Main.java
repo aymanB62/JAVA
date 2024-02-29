@@ -39,6 +39,7 @@ public class Main {
 
 		Periferico raton = new Periferico();
 		Periferico teclado = new Periferico();
+		Periferico monitor = new Periferico();
 		
 		raton.setMarca("Logitech");
 		raton.setPrecio(10.22);
@@ -46,9 +47,13 @@ public class Main {
 		
 		teclado.setMarca("NGS");
 		teclado.setPrecio(11.99);
-		teclado.setTipo("Plastico");
+		teclado.setTipo("Membrana");
 		
-		listaPerifericos.add(teclado); listaPerifericos.add(raton);
+		teclado.setMarca("DELL");
+		teclado.setPrecio(1);
+		teclado.setTipo("LSD");
+		
+		listaPerifericos.add(teclado); listaPerifericos.add(raton); listaPerifericos.add(monitor);
 		
 		
 		ordenador.listaPerifericos = listaPerifericos;

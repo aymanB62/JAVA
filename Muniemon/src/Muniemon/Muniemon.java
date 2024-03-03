@@ -1,4 +1,4 @@
-package fase1;
+package Muniemon;
 
 public class Muniemon {
 
@@ -52,5 +52,33 @@ public class Muniemon {
 				+ ", tipoMuniemon = " + tipoMuniemon + "]";
 	}
 	
+	/*
+	 * Con la opción 5 y 6 los muniemon se atacaran. Para ello, lo muniemon tendran
+	 * un método llamado atacar(Muniemon) el cual se le pasará al objeto Muniemon
+	 * que queremos atacar. En método restará una cantidad de vida al Muniemon
+	 * pasado por parametro igual al ataque del Muniemon que ha invocado el método,
+	 * ahora bien, antes de restar la vida, deberá comprobar la defensa del Muniemon
+	 * atacado, ya que le restará ataque igual a la defensa del objetivo. Ejemplo,
+	 * si el Muniemon atacante tiene un ataque de 5 y el muniemon atacado una
+	 * defensa de 2, solo le restará 3 puntos de vida. Este método tambien tiene que
+	 * controlar, que si un Muniemon tiene la vida igual o menos que 0, no podrá
+	 * atacar porque estará muerto. Es interesante tambien decir quien ataca a quien
+	 * y la vida que le ha restado.
+	 */
+	
+	public void atacar(Muniemon munion) {
+		System.out.println(this.nombre + " esta atacando a " + munion.nombre);
+		int ataqueMenosDefensa;
+		
+		while (munion.vida != 0) {
+			if (this.ataque <= munion.defensa) {
+				munion.vida -= 1;
+			} else if (this.ataque != munion.defensa) {
+				ataqueMenosDefensa = this.ataque - munion.defensa;
+				munion.vida = ataqueMenosDefensa - munion.vida;
+			}
+		}
+		System.out.println(munion.vida);
+	}
 	
 }

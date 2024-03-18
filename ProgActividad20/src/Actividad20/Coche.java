@@ -52,6 +52,36 @@ public class Coche {
 		contadorID = 0;
 		
 	}
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public static int getContadorID() {
+		return contadorID;
+	}
+	public static void setContadorID(int contadorID) {
+		Coche.contadorID = contadorID;
+	}
+	public String getTOYOTA() {
+		return TOYOTA;
+	}
+	public String getRENAULT() {
+		return RENAULT;
+	}
 	
 	
 }

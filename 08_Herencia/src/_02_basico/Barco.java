@@ -11,6 +11,8 @@ public class Barco extends Vehiculo{
 		this.esPirata = esPirata;
 	}
 	
-	
+	/*
+	 * Como la clase barco tiene atributos 
+	 */
 
 }

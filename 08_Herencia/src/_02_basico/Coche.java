@@ -1,4 +1,4 @@
-package _02_basico;
+	package _02_basico;
 
 public class Coche extends VehiculoTerrestre{
 	private int numeroPuertas;

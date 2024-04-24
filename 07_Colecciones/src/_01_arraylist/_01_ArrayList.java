@@ -1,10 +1,12 @@
 package _01_arraylist;
 
+//sa matado paco
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class _01_ArrayList {
 
+	//Clase sobre los array list de la semana del 22/02
 	public static void main(String[] args) {
 		//Los arrays "normales" en java tienen un problema y es que son
 		//estaticos, es decir, una vez creado el array, el tamaño no
@@ -28,9 +30,9 @@ public class _01_ArrayList {
 		//Si preguntamos por el tamaño del array
 		System.out.println(listaString1.size());
 		
-		//Con arrays normales tenemos que tener siempre en cuenta
+		//Con arrays normales tenemos que tener siempre en cuenta//sa matado paco
 		//la posición del array que estamos usando
-		arrayStrings1[0] = "Tom Sawyer";
+		arrayStrings1[0] = "Tom Sawyer";//sa matado paco
 		arrayStrings1[1] = "Scooby Doo";
 		
 		//Con arraylist no necesitamos controlar ultima posición
@@ -89,6 +91,8 @@ public class _01_ArrayList {
 		
 		//La clase String tambien es inmutable
 		String s = "Sherlock";
+		//Aquí lo que estamos cambiando es la referencia de sitio,
+		//pero valor del objeto no se cambia (permanece inmutable)
 		s = "Dr. Wattson";
 		
 		String s2 = "Sherlock";

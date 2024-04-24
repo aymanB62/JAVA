@@ -5,7 +5,7 @@ import java.util.Random;
 public class MainCicloDeVida {
 	public static void main(String[] args) {
 		
-		//Un objeto nace cuando instaciamos la clase con la
+		//Un objeto nace cuando instanciamos la clase con la
 		//palabra "new"
 		new Persona();
 		new Persona().edad = 45;

@@ -11,11 +11,11 @@ public class Muniemon {
 
 	*/
 	
-	String nombre;
-	int vida;
-	int ataque; 
-	int defensa;
-	Tipo tipoMuniemon;
+	private String nombre;
+	private int vida;
+	private int ataque; 
+	private int defensa;
+	private Tipo tipoMuniemon;
 	public String getNombre() {
 		return nombre;
 	}

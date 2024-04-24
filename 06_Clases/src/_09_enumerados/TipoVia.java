@@ -13,7 +13,7 @@ package _09_enumerados;
 
 //Estos objetos estan numerados dentro de una array
 public enum TipoVia {
-	CALLE,AVENIDA,PLAZA,CAÑADA_REAL,PASEO
+	CALLE,AVENIDA,PLAZA,CAÑADA_REAL,PASEO,CARRETERA
 	//CALLE será la posicion 0 del array
 	//AVENIDA será la posición 1 del array
 	//...

@@ -56,6 +56,14 @@ public class Vehiculo {
 	public void setFechaFabricacion(String fechaFabricacion) {
 		this.fechaFabricacion = fechaFabricacion;
 	}
+
+	@Override
+	public String toString() {
+		return "Vehiculo [marca=" + marca + ", peso=" + peso + ", velocidad=" + velocidad + ", fechaFabricacion="
+				+ fechaFabricacion + "]";
+	}
+	
+	
 	
 	
 }

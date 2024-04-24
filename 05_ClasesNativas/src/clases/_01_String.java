@@ -1,4 +1,4 @@
-package clasesString;
+package clases;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class _01_String {
 		int numero = 0;
 		String cadena = "Steve";
 		//Internamente Java creara algo así, pero dentro de un objeto
-		char[] cadenaCaractere = {'S','t','e','v','e'};
+		char[] cadenaCaracteres = {'S','t','e','v','e'};
 		
 		//Los objetos en java tienen lo que se conoce como MÉTODOS
 		//Un método es una funcíón asociada al objeto en cuestión, y se acceden
@@ -183,6 +183,7 @@ public class _01_String {
 		//Generalmente esta manera no se usa
 		//Cuando recogéis una cadena con la clase Scanner se crean los
 		//String de esta manera
+		sc.close();
 	}
 
 }

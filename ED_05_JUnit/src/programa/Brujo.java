@@ -35,7 +35,7 @@ public class Brujo {
 	 */
 	public void setPoder(int poder) {
 		if(poder < 0) {
-			poder = 0;
+			this.poder = 0;
 		}else {
 			this.poder = poder;
 		}

@@ -9,7 +9,7 @@ public class Main {
 	 
 	public static void main(String args[]) {
 	
-		Coche coche1 = new Coche(); 
+		Coche coche1 = new Coche();
 		/*Habrá que crear otra clase llamada "MainCoches" que ejecute el programa principal que muestre el siguiente menú.
 
 		Crear coche

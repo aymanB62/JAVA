@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/UpgradeHub/Desktop/JAVA/WS/EDActividad13Libraria/jar/calculator.jar"/>
+	<classpathentry kind="src" path="/EDActividad13Libraria"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

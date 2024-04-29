@@ -30,6 +30,10 @@ public class Persona {
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
-	
 
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", edad=" + edad + ", peso=" + peso + "]";
+	}
+	
 }

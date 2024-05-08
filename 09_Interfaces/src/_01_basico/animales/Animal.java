@@ -1,4 +1,4 @@
-package _06_abstracciones;
+package _01_basico.animales;
 
 import java.util.Objects;
 

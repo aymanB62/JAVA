@@ -1,7 +1,16 @@
-package _06_abstracciones;
+package _01_basico;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+
+import _01_basico.animales.Alga;
+import _01_basico.animales.Animal;
+import _01_basico.animales.Cangrejo;
+import _01_basico.animales.Leon;
+import _01_basico.animales.Sexo;
+import _01_basico.animales.Tiburon;
+import _01_basico.animales.Trucha;
 
 public class MainZoologico {
 
@@ -42,7 +51,7 @@ public class MainZoologico {
 		
 		//Siempre es mejor utilizar referencias interfaces 
 		//para apuntar a objetos
-		List<Animal> listaAnimales = new ArrayList<>();
+		List<Animal> listaAnimales = new LinkedList<>();
 		listaAnimales.add(trucha);
 		listaAnimales.add(c);
 		listaAnimales.add(l);
@@ -108,6 +117,9 @@ public class MainZoologico {
 			animal.comer(alimento1);
 			System.out.println("Mi nuevo peso: " + animal.getPeso());
 		}
+		
+		
+		//Interfaces
 	}
 
 }

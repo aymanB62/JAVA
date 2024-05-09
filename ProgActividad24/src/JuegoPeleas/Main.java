@@ -28,6 +28,7 @@ public class Main {
 		 * como en el Muniemon.
 		 */
 
+		Personaje mago1 = new Mago();
 	}
 
 }

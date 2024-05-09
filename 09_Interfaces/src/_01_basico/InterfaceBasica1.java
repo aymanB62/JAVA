@@ -32,6 +32,9 @@ package _01_basico;
  * 
  * Todos los métodos y atributos de una interface son PUBLIC, no importa que
  * lo pongáis explicitamente en el método
+ * 
+ * Para crear una interfaz en java se hace como una clase pero se usa
+ * la palabra "interface". Aunque normalmente se creara mediante Eclipse
  */
 public interface InterfaceBasica1 {
 	//Esto sería un atributo constante (final) y público

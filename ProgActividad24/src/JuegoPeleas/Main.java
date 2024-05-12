@@ -1,5 +1,7 @@
 package JuegoPeleas;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -28,7 +30,54 @@ public class Main {
 		 * como en el Muniemon.
 		 */
 
+		Personaje guerrero1 = new Guerrero();
+		Arma espada1 = new Espada();
+		Scanner scanner = new Scanner(System.in);
+
+		guerrero1.setArma(espada1);
+		guerrero1.setNombre("pepe");
+		guerrero1.setVida(5);
+
+		guerrero1.checkArma(espada1);
+		
 		Personaje mago1 = new Mago();
+		Arma hechizo1 = new Hechizo();
+
+		mago1.setArma(espada1);
+		mago1.setNombre("juan");
+		mago1.setVida(5);
+
+		mago1.checkArma(hechizo1);
+		
+		
+		while (mago1.getVida() > 0 && guerrero1.getVida() > 0) {
+            // Turno del jugador 1
+            System.out.println("Turno de " + mago1.getNombre());
+            System.out.println(mago1.getNombre() + " ataca a " + guerrero1.getNombre());
+            mago1.atacar(guerrero1);
+
+            // Verificar si el Jugador 2 ha sido derrotado
+            if (guerrero1.getVida() <= 0) {
+                System.out.println(guerrero1.getNombre() + " ha sido derrotado! " + mago1.getNombre() + " gana.");
+                break;
+            }
+
+            // Turno del jugador 2
+            System.out.println("Turno de " + guerrero1.getNombre());
+            System.out.println(guerrero1.getNombre() + " ataca a " + mago1.getNombre());
+            guerrero1.atacar(mago1);
+
+            // Verificar si el Jugador 1 ha sido derrotado
+            if (mago1.getVida() <= 0) {
+                System.out.println(mago1.getNombre() + " ha sido derrotado! " + guerrero1.getNombre() + " gana.");
+                break;
+            }
+
+            // Esperar entrada del jugador para pasar al siguiente turno
+            System.out.println("Presiona Enter para continuar...");
+            scanner.nextLine();
+        }
+
 	}
 
 }

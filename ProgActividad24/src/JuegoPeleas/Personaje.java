@@ -1,17 +1,10 @@
 package JuegoPeleas;
 
-public  class Personaje {
-	private TipoArma arma;
+public abstract class Personaje {
+	private Arma arma;
 	private String nombre;
 	private int vida;
-
-	public TipoArma getArma() {
-		return arma;
-	}
-
-	public void setArma(TipoArma arma) {
-		this.arma = arma;
-	}
+	private int daño;
 
 	public String getNombre() {
 		return nombre;
@@ -28,5 +21,27 @@ public  class Personaje {
 	public void setVida(int vida) {
 		this.vida = vida;
 	}
+
+	public Arma getArma() {
+		return arma;
+	}
+
+	public void setArma(Arma arma) {
+		this.arma = arma;
+	}
+	
+	public int getDaño() {
+		return daño;
+	}
+
+	public void setDaño(int daño) {
+		this.daño = daño;
+	}
+	
+	abstract void atacar(Personaje p);
+
+	abstract int checkArma(Arma a);
+
+
 
 }

@@ -51,29 +51,24 @@ public class Main {
 		
 		
 		while (mago1.getVida() > 0 && guerrero1.getVida() > 0) {
-            // Turno del jugador 1
             System.out.println("Turno de " + mago1.getNombre());
             System.out.println(mago1.getNombre() + " ataca a " + guerrero1.getNombre());
             mago1.atacar(guerrero1);
 
-            // Verificar si el Jugador 2 ha sido derrotado
             if (guerrero1.getVida() <= 0) {
                 System.out.println(guerrero1.getNombre() + " ha sido derrotado! " + mago1.getNombre() + " gana.");
                 break;
             }
 
-            // Turno del jugador 2
             System.out.println("Turno de " + guerrero1.getNombre());
             System.out.println(guerrero1.getNombre() + " ataca a " + mago1.getNombre());
             guerrero1.atacar(mago1);
 
-            // Verificar si el Jugador 1 ha sido derrotado
             if (mago1.getVida() <= 0) {
                 System.out.println(mago1.getNombre() + " ha sido derrotado! " + guerrero1.getNombre() + " gana.");
                 break;
             }
 
-            // Esperar entrada del jugador para pasar al siguiente turno
             System.out.println("Presiona Enter para continuar...");
             scanner.nextLine();
         }

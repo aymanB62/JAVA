@@ -1,4 +1,4 @@
-package Actividad22;
+package Ejecicio25;
 
 
 import java.util.ArrayList;
@@ -28,6 +28,10 @@ public class Director extends Empleado{
 		return "Directores [empleadosACargo=" + empleadosACargo + "]";
 	}
 	
-	
+	@Override
+	public double calcularDespidoImprocedente(int aniosTrabajados) {
+		// TODO Auto-generated method stub
+		return calcularSalarioTotal() + (0.2 * aniosTrabajados);
+	}
 	
 }

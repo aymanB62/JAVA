@@ -1,4 +1,4 @@
-package Actividad22;
+package Ejecicio25;
 
 
 public class JefeProyecto extends Empleado{
@@ -16,4 +16,5 @@ public class JefeProyecto extends Empleado{
 	public double calcularSalarioTotal() {
 		return getSueldoBase() + incentivos;
 	}
+	
 }

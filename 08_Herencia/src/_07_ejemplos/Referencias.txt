@@ -1,0 +1,41 @@
+
+
+//Referencias y herencia
+Mamander m = new Mamander();
+Muniemon mu = new Muniemon();//Error en tiempo de compilacion
+Muniemon mu = m;//SI
+Object o = new Muniemon();//Error en tiempo de compilacion
+o = new Mamander();
+o.toString();//Si, y mediante polimorfismo se ejecutar el
+			//método toString() de la clase Mamander
+o.getNombre();//NO
+Mamander m2 = (Mamander)o;
+m2.getNombre();//SI
+Muniemon mu2 = (Mamander)o;//SI
+Muniemon mu3 = (Muniemon)o;//SI
+o = new ArrayList<Muniemon>();//
+Mamander m3 = new Object();//NO
+Object o2 = new Object();//SI
+Mamander m4 = o;//NO
+o instanceof Mamander//Flase
+o instanceof ArrayList<Muniemon>//true
+IElectricon ie = new IElectrico()//NO
+IElectrico ie2 = new Rotemon();//SI
+ie2.getNombre();//NO
+ie2.paralizar();//SI
+ie2.toString();//SI, todo hereda de Object
+ie2 = new Mamander();//NO
+ie2 = new Micachu();//SI
+List<IElectrico> listaElectricos = new ArrayList<>();
+listaElectricos.add(ie2);//SI
+listaElectricos.add(new Micachu());//SI
+listaElectricos.add(new Object());//NO
+listaElectricos.add(new Rotemon());//SI
+Mamander m5 = (Mamander)o;//Error en tiempo ejecucion ClassCastException
+Object o2 = 3;//SI, porque java hacer automaticamente un auto wrapper
+var variable = new Rotemon();//SI
+variable = new Rotemon();//SI
+variable = new Micachu();//NO
+var varible2 = new Muniemon();//NO
+var varible3 = new Object();//SI
+variable3 = new Micachu();

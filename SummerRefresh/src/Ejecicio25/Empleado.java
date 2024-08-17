@@ -1,7 +1,7 @@
-package Actividad22;
+package Ejecicio25;
 
 
-public class Empleado {
+public class Empleado implements Fireable{
 
 	private static int contadorID;
 	private int id;
@@ -51,6 +51,18 @@ public class Empleado {
 	@Override
 	public String toString() {
 		return "Empleados [id=" + id + ", DNI=" + DNI + ", nombre=" + nombre + ", sueldoBase=" + sueldoBase + "]";
+	}
+
+	@Override
+	public double calcularDespidoProcedente() {
+		// TODO Auto-generated method stub
+		return calcularSalarioTotal();
+	}
+	
+	@Override
+	public double calcularDespidoImprocedente(int aniosTrabajados) {
+		// TODO Auto-generated method stub
+		return calcularSalarioTotal() + (0.1 * aniosTrabajados);
 	}
 	
 	

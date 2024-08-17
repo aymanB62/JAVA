@@ -1,4 +1,4 @@
-package Actividad22;
+package Actividad25;
 
 
 public class JefeProyecto extends Empleado{

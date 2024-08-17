@@ -18,26 +18,27 @@ public class NombreNumero {
 
 		HashMap<String, String> hashmapNombreNumero = new HashMap<>();
 		Scanner sc = new Scanner(System.in);
-		
-		String nombre;
-		String numeroTelefono;
+
 		
 		System.out.println("Introduce el nombre del contacto y el número de teléfono");
 		for(int i = 0; i < 5; i++) {
-			System.out.println("Nombre: ");
-			nombre = sc.nextLine();
-			System.out.println("Telefono: ");
-			numeroTelefono = sc.nextLine();
-			
-			hashmapNombreNumero.put(nombre, numeroTelefono);
-			
-			hashmapNombreNumero.forEach((k,v) -> {
+			pedirNumeroYGuardarlo(sc, hashmapNombreNumero).forEach((k,v) -> {
 				System.out.print("clave: " + k.toString());
 				System.out.println(" | valor: " + v.toString());
 			});
 		}
 		
-		
+	}
+
+	public static HashMap<String, String> pedirNumeroYGuardarlo(Scanner sc, HashMap<String, String> mapa) {
+			System.out.println("Nombre: ");
+			String nombre = sc.nextLine();
+			System.out.println("Telefono: ");
+			String numeroTelefono = sc.nextLine();
+
+			mapa.put(nombre, numeroTelefono);
+			
+		return mapa;
 	}
 
 }

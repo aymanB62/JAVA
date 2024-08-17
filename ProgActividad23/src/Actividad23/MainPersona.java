@@ -98,5 +98,4 @@ public class MainPersona {
 		System.out.println("4. Salir del programa.");
 
 	}
-
 }

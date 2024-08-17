@@ -1,9 +1,9 @@
-package Actividad22;
+package Actividad25;
 
 
 import java.util.ArrayList;
 
-public class Director extends Empleado{
+public class Director extends Empleado implements Despedible{
 	
 	private ArrayList<Empleado> empleadosACargo;
 	
@@ -27,7 +27,6 @@ public class Director extends Empleado{
 	public String toString() {
 		return "Directores [empleadosACargo=" + empleadosACargo + "]";
 	}
-	
-	
+
 	
 }
